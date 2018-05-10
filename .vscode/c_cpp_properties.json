@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/common",
+                "${workspaceFolder}/samples",
+                "${env:USERPROFILE}/.platformio/packages/framework-arduinoavr/cores/arduino",
+                "${env:USERPROFILE}/.platformio/packages/toolchain-atmelavr/avr/include",
+                "${env:USERPROFILE}/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include",
+                "${env:USERPROFILE}/.platformio/packages/framework-arduinoavr/variants/standard"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 3
+}
