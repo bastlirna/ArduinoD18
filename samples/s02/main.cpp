@@ -26,5 +26,5 @@ void loop2() {
 void loop () {
     RUN loop1();
     RUN loop2();
- // ^^^ tohle by bylo fajn, ale nic takového nefunguje :(
+//! ^^^ tohle by bylo fajn, ale nic takového nefunguje :(
 }

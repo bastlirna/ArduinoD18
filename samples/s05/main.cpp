@@ -2,7 +2,7 @@
 #include <Timer.h>
 
 /*
-    To samé jako s04, ale trochu si zjednodšíme práci pomocí časovače <Timer.h>
+    # To samé jako s04, ale trochu si zjednodšíme práci pomocí časovače <Timer.h>
 */
 
 void setup() {
