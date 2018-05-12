@@ -1,13 +1,12 @@
 #include <Common.h>
 
 /*
-    Úkrok stranou - ukazatel na funkce
+    # Úkrok stranou - ukazatel na funkce
 */
 
 void setup() {
-    pinMode(LED1, OUTPUT);
+    setupPins();
 }
-
 
 void ledOn() {
     digitalWrite(LED1, HIGH);
@@ -17,12 +16,17 @@ void ledOff() {
     digitalWrite(LED1, LOW);
 }
 
-void (*ledDo)(void) = ledOn;
+void (*ledDo)(void) = ledOn; // * Tohle je ukazatel na fci.
 
 void loop () {
-    ledDo();
 
-    ledDo = ledDo == ledOn ? ledOff : ledOn;
+    ledDo(); // * Zavolat 
+
+    if (ledDo == ledOn) {
+        ledDo = ledOff;
+    } else {
+        ledDo = ledOn;
+    }
 
     delay(1000);
 }

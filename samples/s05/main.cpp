@@ -6,21 +6,21 @@
 */
 
 void setup() {
-    pinMode(LED1, OUTPUT);
-    pinMode(LED2, OUTPUT);
+    setupPins();
 }
 
-bool led1_state, led2_state;
 Timer led1t(500), led2t(250);
 
 void loop1() {
-    if (!led1t.elapsed()) return;
-    digitalWrite(LED1, led1_state = ! led1_state);
+    if (led1t.elapsed()) {
+        toggle(LED1);
+    }
 } 
 
 void loop2() {
-    if (!led2t.elapsed()) return;
-    digitalWrite(LED2, led2_state = ! led2_state);
+    if (led2t.elapsed()) {
+        toggle(LED2);
+    }
 }
 
 void loop () {

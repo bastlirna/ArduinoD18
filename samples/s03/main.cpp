@@ -1,27 +1,25 @@
 #include <Common.h>
 
 /*
-    Stejný příklad jako s02, jen si trochu zjednodušíme kód
+    # My ale cheme blika dvěmi LED
 */
 
 void setup() {
-    pinMode(LED1, OUTPUT);
-    pinMode(LED2, OUTPUT);
+    setupPins();
 }
-
-bool led1_on, led2_on;
 
 void loop1() {
     delay(1000);
-    digitalWrite(LED1, led1_on = ! led1_on); // přepni LED
+    toggle(LED1);
 }
 
 void loop2() {
-    delay(1000);
-    digitalWrite(LED2, led2_on = ! led2_on); // přepni LED
+    delay(500);
+    toggle(LED2);
 }
 
 void loop () {
     RUN loop1();
     RUN loop2();
+//! ^^^ tohle by bylo fajn, ale nic takového nefunguje :(
 }

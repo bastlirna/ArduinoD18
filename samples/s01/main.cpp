@@ -1,11 +1,11 @@
-#include <Common.h>
+#include <Common.h> // *1 Společná knihovna 
 
 /*
-    Základní příklad na blikání JEDNOU (!) LED
+    # Základní příklad na blikání JEDNOU (!) LED
 */
 
 void setup() {
-    pinMode(LED1, OUTPUT);
+    setupPins(); // *2 Nastaví LED a BTN (viz Common.h)
 }
 
 void loop() {

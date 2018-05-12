@@ -30,5 +30,6 @@
             "color": "#98C379",
             "strikethrough": false
         }
-    ]
+    ],
+    "editor.fontSize": 13
 }

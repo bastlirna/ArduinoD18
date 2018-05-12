@@ -1,27 +1,27 @@
 #include <Common.h>
 
 /*
-    Neblokující kód
+    # Neblokující kód
 */
 
 void setup() {
-    pinMode(LED1, OUTPUT);
-    pinMode(LED2, OUTPUT);
+    setupPins();
 }
 
-bool led1_state, led2_state;
 unsigned long led1_time, led2_time;
 
 void loop1() {
     if (millis() - led1_time < 1000) return;
     led1_time = millis();
-    digitalWrite(LED1, led1_state = ! led1_state);
+
+    toggle(LED1);
 }
 
 void loop2() {
     if (millis() - led2_time < 1000) return;
     led2_time = millis();
-    digitalWrite(LED2, led2_state = ! led2_state);
+
+    toggle(LED2);
 }
 
 void loop () {

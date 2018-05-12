@@ -33,6 +33,6 @@
 
 ## Odkazy
 
-
+https://www.se.rit.edu/~tabeec/RIT_441/Resources_files/How%20To%20Write%20Unmaintainable%20Code.pdf
 
 
