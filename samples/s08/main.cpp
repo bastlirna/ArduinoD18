@@ -15,7 +15,7 @@ void loop () {
         case 1:
             semafor(1, 0, 0); // červená (1)
             delay(5000);
-            state = 1;
+            state = 2;
             break;
     
         case 2:
